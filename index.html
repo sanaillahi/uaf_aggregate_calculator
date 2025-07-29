@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨UAF Aggregate Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <div class="container">
+    <!-- Mock Logo -->
+    <div class="logo">
+      <div class="logo-circle">
+<img src="c:\Users\786\Downloads\uaf_logo-removebg-preview (1).png" alt="">      
+</div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1 class="main-title">UAF Aggregate Calculator</h1>
+ 
+    </div>
+
+    <!-- Calculator Card -->
+    <div class="calculator-card">
+      <div class="card-header">
+        <h2 class="card-title">Enter Your Marks</h2>
+      </div>
+      <div class="card-content">
+
+        <!-- Matric Section -->
+        <div class="section matric-section">
+          <h3 class="section-title">Matriculation</h3>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="matricObtained" class="label">Obtained Marks</label>
+              <input id="matricObtained" class="input" type="number" />
+              <div id="matricObtainedError" class="error-message hidden"></div>
+            </div>
+            <div class="input-group">
+              <label for="matricTotal" class="label">Total Marks</label>
+              <input id="matricTotal" class="input" type="number" placeholder="e.g 1100" />
+              <div id="matricTotalError" class="error-message hidden"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate Section -->
+        <div class="section inter-section">
+          <h3 class="section-title">Intermediate</h3>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="interObtained" class="label">Obtained Marks</label>
+              <input id="interObtained" class="input" type="number" />
+              <div id="interObtainedError" class="error-message hidden"></div>
+            </div>
+            <div class="input-group">
+              <label for="interTotal" class="label">Total Marks</label>
+              <input id="interTotal" class="input" type="number" placeholder="e.g 1200" />
+              <div id="interTotalError" class="error-message hidden"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry Test Section -->
+        <div class="section entry-section">
+          <h3 class="section-title">Entry Test</h3>
+          <div class="input-group">
+            <label for="entryTestObtained" class="label">Obtained Marks (out of 100)</label>
+            <input id="entryTestObtained" class="input" type="number" />
+            <div id="entryTestObtainedError" class="error-message hidden"></div>
+          </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button id="calculateBtn" class="calculate-btn" disabled>
+          <span id="btnText">Calculate Aggregate</span>
+          <span id="spinner" class="spinner hidden"></span>
+        </button>
+
+        <!-- Result Section -->
+        <div id="resultSection" class="result-section hidden">
+          <div class="result-title">Your UAF Aggregate is:</div>
+          <div id="resultValue" class="result-value">0.00%</div>
+          
+  <button id="resetBtn" style="margin-top: 15px;">Calculate Again</button>
+</div>
+
+          <div class="result-details">Weightage Applied: Matric: 30% • Intermediate: 30% • Entry Test: 40%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      <p>This calculator is unofficial and meant for estimation purposes only.</p> <br>
+      <p id="end">Made by SI</p>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

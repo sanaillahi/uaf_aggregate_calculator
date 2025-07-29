@@ -42,7 +42,7 @@ class UAFCalculator {
 
         if (name === "matricTotal" && this.formData.matricObtained) {
             const obtained = parseFloat(this.formData.matricObtained);
-            if (obtained > numValue) return "Total must be >= obtained";
+            if (obtained > numValue) return "Total must be greater than obtained";
         }
 
         if (name === "interObtained" && this.formData.interTotal) {
@@ -52,7 +52,7 @@ class UAFCalculator {
 
         if (name === "interTotal" && this.formData.interObtained) {
             const obtained = parseFloat(this.formData.interObtained);
-            if (obtained > numValue) return "Total must be >= obtained";
+            if (obtained > numValue) return "Total must be greater than obtained";
         }
 
         if (name === "entryTestObtained" && numValue > 100) {
@@ -185,3 +185,5 @@ class UAFCalculator {
 }
 
 document.addEventListener('DOMContentLoaded', () => new UAFCalculator());
+
+console.log("@uaf_coder");
